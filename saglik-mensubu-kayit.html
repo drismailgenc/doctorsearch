@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sağlık Mensubu Kayıt - DOCTORSearch</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/saglik-mensubu-kayit.css">
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        <span class="logo-text">DOCTOR<span class="highlight">Search</span></span>
+      </div>
+      <nav>
+        <a href="#" class="nav-link accent-link"><i class="fas fa-exchange-alt"></i> Acentanızı bize taşıyın!</a>
+        
+        <!-- Kaydol Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-user-plus"></i> Kaydol</button>
+          <div class="dropdown-content">
+            <a href="bireysel-kayit.html"><i class="fas fa-user"></i> Bireysel Kayıt</a>
+            <a href="saglik-mensubu-kayit.html"><i class="fas fa-user-md"></i> Sağlık Mensubu Kayıt</a>
+          </div>
+        </div>
+        
+        <div class="select-wrapper">
+          <select class="currency-select">
+            <option>TRY</option>
+            <option>USD</option>
+            <option>EUR</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select class="language-select">
+            <option>TR</option>
+            <option>EN</option>
+            <option>AR</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="registration-container">
+      <h2 class="section-title">Yetkili Sağlık Tesisleri Kayıt</h2>
+      <p class="section-description">Lütfen çalıştığınız sağlık tesisi türünü seçerek kayıt işlemine devam ediniz</p>
+      
+      <div class="facility-selection">
+        <div class="facility-card" id="hospital-card">
+          <div class="facility-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <h3>Yetkili Hastaneler</h3>
+          <p>Tam teşekküllü hastanelerde çalışan doktor ve sağlık personeli için.</p>
+          <ul class="facility-features">
+            <li><i class="fas fa-check-circle"></i> Devlet Hastaneleri</li>
+            <li><i class="fas fa-check-circle"></i> Üniversite Hastaneleri</li>
+            <li><i class="fas fa-check-circle"></i> Özel Hastaneler</li>
+            <li><i class="fas fa-check-circle"></i> Eğitim ve Araştırma Hastaneleri</li>
+          </ul>
+          <a href="hastane-kayit.html" class="facility-btn">Bu Tesiste Çalışıyorum</a>
+        </div>
+        
+        <div class="facility-card" id="medical-center-card">
+          <div class="facility-icon">
+            <i class="fas fa-clinic-medical"></i>
+          </div>
+          <h3>Yetkili Tıp Merkezleri</h3>
+          <p>Tıp merkezlerinde çalışan doktor ve sağlık personeli için.</p>
+          <ul class="facility-features">
+            <li><i class="fas fa-check-circle"></i> Poliklinikler</li>
+            <li><i class="fas fa-check-circle"></i> Tıp Merkezleri</li>
+            <li><i class="fas fa-check-circle"></i> Diyaliz Merkezleri</li>
+            <li><i class="fas fa-check-circle"></i> Görüntüleme Merkezleri</li>
+          </ul>
+          <a href="tip-merkezi-kayit.html" class="facility-btn">Bu Tesiste Çalışıyorum</a>
+        </div>
+        
+        <div class="facility-card" id="private-practice-card">
+          <div class="facility-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3>Yetkili Muayenehaneler</h3>
+          <p>Özel muayenehanesi olan doktorlar için.</p>
+          <ul class="facility-features">
+            <li><i class="fas fa-check-circle"></i> Özel Muayenehaneler</li>
+            <li><i class="fas fa-check-circle"></i> Uzman Doktor Ofisleri</li>
+            <li><i class="fas fa-check-circle"></i> Diş Hekimi Muayenehaneleri</li>
+            <li><i class="fas fa-check-circle"></i> Psikoterapi Ofisleri</li>
+          </ul>
+          <a href="muayenehane-kayit.html" class="facility-btn">Bu Tesiste Çalışıyorum</a>
+        </div>
+        
+        <div class="facility-card" id="other-facility-card">
+          <div class="facility-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Yetkili Diğer Sağlık Tesisleri</h3>
+          <p>Diğer sağlık tesislerinde çalışan sağlık personeli için.</p>
+          <ul class="facility-features">
+            <li><i class="fas fa-check-circle"></i> Fizik Tedavi Merkezleri</li>
+            <li><i class="fas fa-check-circle"></i> Ağız ve Diş Sağlığı Merkezleri</li>
+            <li><i class="fas fa-check-circle"></i> Laboratuvarlar</li>
+            <li><i class="fas fa-check-circle"></i> Rehabilitasyon Merkezleri</li>
+          </ul>
+          <a href="diger-tesis-kayit.html" class="facility-btn">Bu Tesiste Çalışıyorum</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img">
+        <span>DOCTORSearch</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Hakkımızda</a>
+        <a href="#">Hizmetlerimiz</a>
+        <a href="#">İletişim</a>
+        <a href="#">Gizlilik Politikası</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>© 2025 DOCTORSearch. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+</body>
+</html>

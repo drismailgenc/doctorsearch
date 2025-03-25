@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HYP - Hasta Yönetim Paneli</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="styles/admin-panel.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="HYP Logo">
+      <span>DMS</span>
+      <small>Hasta Takip Platformu</small>
+    </div>
+    <div class="user-actions">
+      <div class="user-info">
+        <span>RAMAZAN AKDEMİR</span>
+        <small>Kardiyoloji</small>
+      </div>
+      <div class="icons">
+        <a href="#" class="icon-link"><i class="fas fa-users"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-question-circle"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-sign-out-alt"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <div class="patient-info">
+        <div class="patient-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="patient-details">
+          <h3>BAYRAKTAR YILMAZ</h3>
+          <p>10*******40</p>
+          <p>48 yaşında</p>
+          <p>Erkek</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-item active">
+          <span>TAKİP İŞLEMİ KAYITLARI</span>
+        </div>
+        <div class="nav-item">
+          <span>HASTALIK PROGRAMLARI</span>
+        </div>
+        <div class="nav-item disease">
+          <span>HİPERTANSİYON</span>
+          <i class="fas fa-heartbeat"></i>
+          <div class="disease-info">
+            <p>Son takip tarihi: 11.10.2024</p>
+            <p>Sonraki: 11.01.2025</p>
+            <p>İzlem listesinde</p>
+          </div>
+        </div>
+        <div class="nav-item disease">
+          <span>DİYABET</span>
+          <i class="fas fa-syringe"></i>
+          <div class="disease-info">
+            <p>Son takip tarihi: 18.09.2024</p>
+            <p>Sonraki: 18.03.2025</p>
+            <p>İzlem listesinde</p>
+          </div>
+        </div>
+        <div class="nav-item disease">
+          <span>KARDİYOVASKÜLER RİSK</span>
+          <i class="fas fa-heart"></i>
+          <div class="disease-info">
+            <p>Son takip tarihi: 17.07.2024</p>
+            <p>Sonraki: 17.01.2025</p>
+            <p>İzlem listesinde</p>
+          </div>
+        </div>
+        <div class="nav-item disease">
+          <span>OBEZİTE</span>
+          <i class="fas fa-weight"></i>
+          <div class="disease-info">
+            <p>Son takip tarihi: -</p>
+            <p>Sonraki: İlk fırsatta</p>
+            <p>İlk izlem listesinde</p>
+            <p>(Obezite Merkezi İzlem)</p>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="patient-summary">
+        <h2>HASTALIK TAKİP ÖZETİ</h2>
+        <p class="summary-text">
+          Bu ekranda hastanın son hedeflerini ve ölçümlerini görebilir, bir önceki hipertansiyon tedavi planını ve notlarını inceleyebilirsiniz. Dilerseniz yeni not ekleyebilirsiniz.
+        </p>
+        <p class="summary-text">
+          Hipertansi hastanın periyodik hipertansiyon izlemini yapmak üzere ilerliyiniz. Hastanın bir önceki izlemi 11.10.2024 tarihinde yapılmıştır.
+        </p>
+        <div class="action-buttons">
+          <button class="action-btn">İzlem Başlat (Yüz Yüze Muayene)</button>
+          <button class="action-btn">İzlem Başlat (Görüntülü Muayene)</button>
+        </div>
+      </section>
+
+      <div class="panels-container">
+        <section class="panel history-panel">
+          <div class="panel-header">
+            <h3>HASTALIK TAKİP GEÇMİŞİ</h3>
+            <button class="panel-icon"><i class="fas fa-expand-alt"></i></button>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">11.10.2024</div>
+              <div class="timeline-icon hypertension">
+                <i class="fas fa-file-medical"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>Hipertansiyon İzlem</h4>
+                <p>AĞRI PATNOS 025 NOLU AİLE HEKİMLİĞİ BİRİMİ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">23.09.2024</div>
+              <div class="timeline-icon visit">
+                <i class="fas fa-hospital"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>Sağlık kuruluşu ziyareti</h4>
+                <p>AĞRI PATNOS 015 NOLU AİLE HEKİMLİĞİ BİRİMİ - AİLE HEKİMLİĞİ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">18.09.2024</div>
+              <div class="timeline-icon diabetes">
+                <i class="fas fa-file-medical"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>Diyabet İzlem</h4>
+                <p>AĞRI PATNOS 025 NOLU AİLE HEKİMLİĞİ BİRİMİ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">18.09.2024</div>
+              <div class="timeline-icon diabetes-treatment">
+                <i class="fas fa-pills"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>Diyabet Tarama</h4>
+                <p>AĞRI PATNOS 025 NOLU AİLE HEKİMLİĞİ BİRİMİ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">18.09.2024</div>
+              <div class="timeline-icon visit">
+                <i class="fas fa-hospital"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>Sağlık kuruluşu ziyareti</h4>
+                <p>AĞRI PATNOS 025 NOLU AİLE HEKİMLİĞİ BİRİMİ</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button class="more-btn">Daha eski takipler</button>
+          </div>
+        </section>
+
+        <section class="panel blood-pressure-panel">
+          <div class="panel-header">
+            <h3>KAN BASINCI</h3>
+          </div>
+          <div class="tabs">
+            <button class="tab active">Sistolik</button>
+            <button class="tab">Diyastolik</button>
+            <button class="tab">Sistolik - Diyastolik</button>
+          </div>
+          <div class="target-section">
+            <div class="target-label">Hedef</div>
+            <div class="target-value">
+              <span class="less-than">&lt;</span>
+              <input type="text" value="140" class="target-input">
+              <span class="unit">mmHg</span>
+            </div>
+          </div>
+          <div class="current-section">
+            <div class="current-label">
+              <span class="greater-than">&gt;</span>
+              <input type="text" placeholder="Hedef koyulmadı..." class="current-input">
+              <span class="unit">mmHg</span>
+            </div>
+          </div>
+          <div class="chart-container">
+            <div class="chart-labels">
+              <div class="normal">Normal</div>
+              <div class="warning">Uyarı</div>
+            </div>
+            <div class="chart">
+              <!-- Burada grafik olacak -->
+              <img src="assets/chart.png" alt="Kan Basıncı Grafiği" class="chart-image">
+            </div>
+            <div class="chart-legend">
+              <div class="legend-item"><span class="legend-color purple"></span> Üst Limit</div>
+              <div class="legend-item"><span class="legend-color red"></span> Alt Limit</div>
+              <div class="legend-item"><span class="legend-color black"></span> Ölçümler</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="panels-container">
+        <section class="panel treatment-plan-panel">
+          <div class="panel-header">
+            <h3>BİR ÖNCEKİ TEDAVİ PLANI</h3>
+            <button class="download-btn"><i class="fas fa-download"></i> Yazdır al</button>
+          </div>
+          <div class="treatment-items">
+            <div class="treatment-item warning">
+              <div class="warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="treatment-content">
+                <h4>Diyetisyen sevk</h4>
+                <div class="treatment-status">İlgili hastane ziyareti bulunmamadı.</div>
+              </div>
+            </div>
+            <div class="treatment-item warning">
+              <div class="warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="treatment-content">
+                <h4>Kardiyoloji sevk</h4>
+                <div class="treatment-status">İlgili hastane ziyareti bulunmamadı.</div>
+              </div>
+            </div>
+            <div class="treatment-item warning">
+              <div class="warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="treatment-content">
+                <h4>Göz Hastalıkları sevk</h4>
+                <div class="treatment-status">İlgili hastane ziyareti bulunmamadı.</div>
+              </div>
+            </div>
+            <div class="treatment-item warning">
+              <div class="warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="treatment-content">
+                <h4>Fiziksel Tıp ve Rehabilitasyon sevk</h4>
+                <div class="treatment-status">İlgili hastane ziyareti bulunmamadı.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel lipit-panel">
+          <div class="panel-header">
+            <h3>LİPİT VE KVR</h3>
+          </div>
+          <div class="tabs">
+            <button class="tab active">LDL</button>
+            <button class="tab">HDL</button>
+            <button class="tab">Trigliserit</button>
+            <button class="tab">Sonuç</button>
+          </div>
+          <div class="target-section">
+            <div class="target-label">Hedef</div>
+            <div class="target-value">
+              <span class="less-than">&lt;</span>
+              <input type="text" value="70" class="target-input">
+              <span class="unit">mg/dL</span>
+            </div>
+          </div>
+          <div class="chart-container">
+            <div class="chart-result">
+              <div class="result-value">101.8 mg/dL</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html> 

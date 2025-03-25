@@ -1,0 +1,82 @@
+[
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Adana Çukurova Üniversitesi Hastanesi",
+        "saglik_tesisi_turu": "Kamu Üniversitesi Hastanesi"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Başkent Üniversitesi Adana Dr. Turgut Noyan Uygulama ve Araştırma Merkezi",
+        "saglik_tesisi_turu": "Vakıf Üniversitesi Hastanesi"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Acıbadem Adana Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Acıbadem Ortopedia Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Algomed Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Altınkoza Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Avrupa Hospital Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Epc Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Güzelyalı Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Medicalpark Adana Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Medicalpark Seyhan Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Medline Hastanesi Adana",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "Özel Ortadoğu Sağlık Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adana",
+        "saglik_tesisi_adi": "T.C. Sağlık Bakanlığı Adana Şehir Hastanesi",
+        "saglik_tesisi_turu": "Kamu Hastanesi"
+    },
+    {
+        "il": "Adıyaman",
+        "saglik_tesisi_adi": "Özel Adıyaman Park Hospital Hastanesi",
+        "saglik_tesisi_turu": "Özel Hastane"
+    },
+    {
+        "il": "Adıyaman",
+        "saglik_tesisi_adi": "T.C. Sağlık Bakanlığı Adıyaman Üniversitesi E.A.H.",
+        "saglik_tesisi_turu": "Kamu Hastanesi"
+    }
+]

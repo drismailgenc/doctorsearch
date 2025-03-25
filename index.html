@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCTORSearch</title>
+  
+  <!-- Google Font - Daha modern fontlar ekledim -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        <span class="logo-text">DOCTOR<span class="highlight">Search</span></span>
+      </div>
+      <nav>
+        <a href="#" class="nav-link accent-link"><i class="fas fa-exchange-alt"></i> Acentanızı bize taşıyın!</a>
+        
+        <!-- Kaydol Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-user-plus"></i> Kaydol</button>
+          <div class="dropdown-content">
+            <a href="bireysel-kayit.html"><i class="fas fa-user"></i> Bireysel Kayıt</a>
+            <a href="saglik-mensubu-kayit.html"><i class="fas fa-user-md"></i> Yetkili Sağlık Tesisleri Kayıt</a>
+          </div>
+        </div>
+        
+        <!-- Giriş Yap Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-sign-in-alt"></i> Giriş Yap</button>
+          <div class="dropdown-content">
+            <a href="bireysel-giris.html"><i class="fas fa-user"></i> Bireysel Girişi</a>
+            <a href="saglik-mensubu-giris.html"><i class="fas fa-user-md"></i> Yetkili Sağlık Tesisleri Girişi</a>
+            <a href="acenta-giris.html"><i class="fas fa-building"></i> Acenta Girişi</a>
+          </div>
+        </div>
+        
+        <div class="select-wrapper">
+          <select class="currency-select">
+            <option>TRY</option>
+            <option>USD</option>
+            <option>EUR</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select class="language-select">
+            <option>TR</option>
+            <option>EN</option>
+            <option>AR</option>
+          </select>
+        </div>
+      </nav>
+      
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="highlight">Dijital sağlık</span> ekosisteminin geleceğini inşa ediyor ve milyonlarca 
+          insanın hayatına <span class="highlight">değer katıyoruz</span>.
+        </h1>
+        
+        <div class="search-bar-container">
+          <!-- Tabs -->
+          <div class="tabs">
+            <button class="tab active" data-type="video">
+              <i class="fas fa-video"></i> Video
+            </button>
+            <button class="tab" data-type="appointment">
+              <i class="fas fa-calendar-check"></i> Randevu
+            </button>
+            <button class="tab" data-type="tourism">
+              <i class="fas fa-plane"></i> Sağlık Turizmi
+            </button>
+          </div>
+        
+          <!-- Search Area -->
+          <div class="search-area">
+            <div id="search-fields" class="fields-container">
+              <!-- Dinamik olarak dolduruluyor (script.js) -->
+              <input type="text" placeholder="Uzman doktor veya tedavi arayın...">
+            </div>
+            <button class="search-btn" onclick="window.location.href='doctor-list.html'">
+              <i class="fas fa-search"></i> Ara
+            </button>
+          </div>
+        </div>      
+
+        <button class="panel-btn" onclick="window.location.href='admin-panel.html'"><i class="fas fa-cog"></i> Hasta Takip Paneli</button>
+      </div>
+    </div>
+
+    <button class="chat-btn"><i class="fas fa-comment-medical"></i> Hey Doc</button>
+  </header>
+
+  <main>
+    <!-- Ülke Kartları Bölümü -->
+    <section class="cards-section">
+      <h2 class="section-title">Dünya Genelinde Hizmet</h2>
+      <div class="cards-grid">
+        <div class="country-card" data-country="Türkiye">
+          <div class="card-overlay">
+            <h3>Türkiye</h3>
+            <p>250+ Uzman Doktor</p>
+          </div>
+          <img src="assets/ism.jpeg" alt="Türkiye" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-turkey-48.png" alt="Türkiye">
+          </div>
+        </div>
+        <div class="country-card" data-country="Meksika">
+          <div class="card-overlay">
+            <h3>Meksika</h3>
+            <p>180+ Uzman Doktor</p>
+          </div>
+          <img src="assets/doc1.jpeg" alt="Meksika" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-mexico-48.png" alt="Meksika">
+          </div>
+        </div>
+        <div class="country-card" data-country="Hindistan">
+          <div class="card-overlay">
+            <h3>Hindistan</h3>
+            <p>150+ Uzman Doktor</p>
+          </div>
+          <img src="assets/hint.jpeg" alt="Hindistan" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-india-48.png" alt="Hindistan">
+          </div>
+        </div>
+        <div class="country-card" data-country="Brezilya">
+          <div class="card-overlay">
+            <h3>Brezilya</h3>
+            <p>120+ Uzman Doktor</p>
+          </div>
+          <img src="assets/doc2.jpeg" alt="Brezilya" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-brazil-48.png" alt="Brezilya">
+          </div>
+        </div>
+        <div class="country-card" data-country="Tayland">
+          <div class="card-overlay">
+            <h3>Tayland</h3>
+            <p>100+ Uzman Doktor</p>
+          </div>
+          <img src="assets/doc4.jpeg" alt="Tayland" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-thailand-48.png" alt="Tayland">
+          </div>
+        </div>
+        <div class="country-card" data-country="Singapur">
+          <div class="card-overlay">
+            <h3>Singapur</h3>
+            <p>80+ Uzman Doktor</p>
+          </div>
+          <img src="assets/doc3.jpeg" alt="Singapur" class="card-image">
+          <div class="country-badge">
+            <img src="assets/icons8-singapore-48.png" alt="Singapur">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Harita Bölümü -->
+    <section class="map-section">
+      <h2 class="section-title">Global Sağlık Ağımız</h2>
+      <div class="map-container">
+        <img 
+          src="assets/map.png" 
+          class="world-map" 
+          alt="World Map"
+        >
+        <div class="country-btn tr" data-country="Türkiye">
+          <i class="fas fa-map-marker-alt"></i> Türkiye
+        </div>
+        <div class="country-btn in" data-country="Hindistan">
+          <i class="fas fa-map-marker-alt"></i> Hindistan
+        </div>
+        <div class="country-btn mx" data-country="Meksika">
+          <i class="fas fa-map-marker-alt"></i> Meksika
+        </div>
+        <div class="country-btn sg" data-country="Singapur">
+          <i class="fas fa-map-marker-alt"></i> Singapur
+        </div>
+        <div class="country-btn br" data-country="Brezilya">
+          <i class="fas fa-map-marker-alt"></i> Brezilya
+        </div>
+        <div class="country-btn th" data-country="Tayland">
+          <i class="fas fa-map-marker-alt"></i> Tayland
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img">
+        <span>DOCTORSearch</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Hakkımızda</a>
+        <a href="#">Hizmetlerimiz</a>
+        <a href="#">İletişim</a>
+        <a href="#">Gizlilik Politikası</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>© 2025 DOCTORSearch. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

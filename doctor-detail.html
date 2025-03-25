@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doktor Detay - Uzm. Dr. Ramazan Akdemir</title>
+
+  <!-- Mevcut stil dosyalarınız -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- Detay sayfası için ekstra stil -->
+  <link rel="stylesheet" href="styles/doctor-detail.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+  
+  <!-- Ek CSS: Sertifika Modal ve Banner -->
+  <style>
+    /* Sertifika Banner */
+    .certificate-banner {
+      width: 100%;
+      background-color: var(--light-bg);
+      padding: 1rem;
+      text-align: center;
+    }
+    .certificate-banner img {
+      max-width: 300px;
+      cursor: pointer;
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+      margin: 0 0.5rem;
+    }
+    /* Modal stilleri */
+    .modal {
+      display: none; /* Başlangıçta gizli */
+      position: fixed;
+      z-index: 1000;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .close {
+      position: absolute;
+      top: 50px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        DOCTORSearch
+      </div>
+      <nav>
+        <a href="#" class="nav-link">Acentanızı bize taşıyın!</a>
+        
+        <!-- Kaydol Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn">Kaydol</button>
+          <div class="dropdown-content">
+            <a href="bireysel-kayit.html">Bireysel Kayıt</a>
+            <a href="saglik-mensubu-kayit.html">Sağlık Mensubu Kayıt</a>
+          </div>
+        </div>
+        
+        <!-- Giriş Yap Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn">Giriş Yap</button>
+          <div class="dropdown-content">
+            <a href="bireysel-giris.html">Bireysel Giriş</a>
+            <a href="saglik-mensubu-giris.html">Sağlık Mensubu Girişi</a>
+            <a href="acenta-giris.html">Acenta Girişi</a>
+          </div>
+        </div>
+        
+        <select>
+          <option>TRY</option>
+          <option>USD</option>
+          <option>EUR</option>
+        </select>
+        <select>
+          <option>TR</option>
+          <option>EN</option>
+          <option>AR</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="doctor-detail-container">
+      <!-- Sol Menü (Profil ve Menü Linkleri) -->
+      <aside class="doctor-sidebar">
+        <div class="doctor-profile">
+          <img src="assets/ram.jpeg" alt="Doktor Profil" class="profile-image">
+          <h2 class="doctor-name">Uzm. Dr. Ramazan Akdemir</h2>
+          <p class="doctor-specialty">Dahiliye ve Kardiyoloji Uzmanı</p>
+          <!-- Doktorun bildiği diller eklendi -->
+          <p class="doctor-languages">Diller: Türkçe, İngilizce, Almanca</p>
+          <button class="btn-appointment">Görüntülü Ön Görüşme</button>
+          <button class="btn-appointment">Soru Sor</button>
+          <button class="btn-appointment">Fiyat Teklifi Al</button>
+        </div>
+      </aside>
+
+      <!-- Sağ İçerik Kısmı -->
+      <section class="doctor-detail-content">
+        
+        <!-- ANASAYFA BÖLÜMÜ -->
+        <div id="anasayfa" class="content-section home-section">
+          <h1>Uzm. Dr. Ramazan Akdemir</h1>
+          <h3>Dahiliye ve Kardiyoloji Uzmanı</h3>
+          <p class="subtitle">Kalp ve İç Hastalıkları, Diyabet, Hipertansiyon ve Daha Fazlası</p>
+          <hr>
+          <p>
+            Hoş geldiniz! Bu sayfada, sağlık problemlerinizle ilgili kapsamlı bilgi ve 
+            tedavi seçeneklerini bulabilir, benimle doğrudan iletişime geçebilirsiniz. 
+            Modern tıp yöntemleriyle, sağlığınızı korumayı ve geliştirmeyi hedefliyorum.
+          </p>
+        </div>
+
+        <!-- Sertifika Banner: Sayfanın en üst kısmında gösterilecek -->
+        <div class="certificate-banner">
+          <img id="certificateImage" src="assets/certificate.jpeg" alt="Sertifika Belgesi">
+          <img id="certificateImage" src="assets/cert2.jpg" alt="Sertifika Belgesi">
+          <img id="certificateImage" src="assets/cert3.jpg" alt="Sertifika Belgesi">
+        </div>
+
+        <!-- HAKKIMDA BÖLÜMÜ -->
+        <div id="hakkimda" class="content-section">
+          <h2>Hakkımda</h2>
+          <p>
+            Tıp eğitimimi 2002 yılında İstanbul Üniversitesi Tıp Fakültesi’nde tamamladım. 
+            Dahiliye uzmanlığımı ise 2008 yılında aldım. Kalp hastalıkları, diyabet, hipertansiyon 
+            ve metabolik bozukluklar alanında çeşitli araştırmalar yapmaktayım. Ulusal ve uluslararası 
+            kongrelerde birçok sunum gerçekleştirdim.
+          </p>
+          <p>
+            <strong>Çalışma Saatlerim:</strong> Hafta içi 08:00 - 17:00, Cumartesi 09:00 - 13:00
+          </p>
+        </div>
+
+        <!-- İLETİŞİM BÖLÜMÜ -->
+        <div id="iletisim" class="content-section">
+          <h2>İletişim</h2>
+          <p><i class="fas fa-map-marker-alt"></i> Kordonboyu Mah. Doktorlar Cad. No:20, 35000 Bayraklı/İzmir</p>
+          <p><i class="fas fa-phone"></i> +90 555 123 45 67</p>
+          <p><i class="fas fa-envelope"></i> ramazan.akdemir@ornekmail.com</p>
+          <hr>
+          <p>
+            Randevu veya danışma için lütfen telefon veya e-posta yoluyla iletişime geçiniz. 
+            Dilerseniz online randevu talebi de oluşturabilirsiniz.
+          </p>
+        </div>
+
+        <!-- HİZMETLER BÖLÜMÜ -->
+        <div id="hizmetler" class="content-section">
+          <h2>Hizmetler</h2>
+          <ul>
+            <li>Dahiliye ve Kardiyoloji Konsültasyonu</li>
+            <li>Diyabet ve Hipertansiyon Takibi</li>
+            <li>Kalp Hastalıkları Değerlendirme</li>
+            <li>Check-up Programları</li>
+            <li>Metabolik Hastalıklar Danışmanlığı</li>
+          </ul>
+        </div>
+
+        <!-- GÖRÜŞLER BÖLÜMÜ -->
+        <div id="gorusler" class="content-section">
+          <h2>Hasta Görüşleri</h2>
+          <div class="review">
+            <p><strong>Ayşe K.</strong></p>
+            <p>“Dr. Akdemir, kalp rahatsızlığım konusunda beni detaylı şekilde bilgilendirdi ve tedavi sürecimde çok yardımcı oldu.”</p>
+          </div>
+          <div class="review">
+            <p><strong>Mehmet D.</strong></p>
+            <p>“Diyabet takibimde büyük fark yarattı. Güler yüzlü, anlayışlı ve alanında uzman.”</p>
+          </div>
+        </div>
+
+        <!-- GALERİ BÖLÜMÜ -->
+        <div id="galeri" class="content-section">
+          <h2>Galeri</h2>
+          <div class="gallery-grid">
+            <img src="assets/ram2.jpg" alt="Galeri Fotoğraf 1">
+            <img src="assets/ram3.jpg" alt="Galeri Fotoğraf 2">
+            <img src="assets/ram4.jpg" alt="Galeri Fotoğraf 3">
+            <img src="assets/ram5.jpg" alt="Galeri Fotoğraf 4">
+          </div>
+        </div>
+
+        <!-- EK BİLGİLER BÖLÜMÜ -->
+        <div id="ek-bilgiler" class="content-section extra-info-grid">
+          <!-- 1. Kart: Okullar/Eğitimler -->
+          <div class="info-card">
+            <h3>Okullar / Eğitimler</h3>
+            <ul>
+              <li>Tıp Doktoru, Ege Üniversitesi Tıp Fakültesi, 1995</li>
+              <li>Kardiyoloji Uzmanlığı, Sağlık Bilimleri Üniversitesi, 
+                İstanbul Kartal Koşuyolu Kalp Eğitim ve Araştırma Hastanesi(SUAM), 2001</li>
+              <li>Kardiyak Manyetik Rezonans Görüntüleme Yurtdışı Master Programı, 
+                Facinsco de Vitoria, Madrid, 2022</li>
+            </ul>
+          </div>
+
+          <!-- 2. Kart: Bilinen Diller -->
+          <div class="info-card">
+            <h3>Bilinen Diller</h3>
+            <ul>
+              <li>İngilizce</li>
+              <li>İspanyolca</li>
+              <li>Arapça</li>
+              <li>Türkçe</li>
+            </ul>
+          </div>
+
+          <!-- 3. Kart: Sertifikalar -->
+          <div class="info-card">
+            <h3>Sertifikalar</h3>
+            <ul>
+              <li>Cardiac MRI Training Certificate</li>
+              <li>Certificate of Completion</li>
+              <li>Advanced Cardiology Workshop</li>
+            </ul>
+          </div>
+
+          <!-- 4. Kart: İlgi Alanları -->
+          <div class="info-card">
+            <h3>İlgi Alanları</h3>
+            <ul>
+              <li>Kalp Yetmezliği</li>
+              <li>Hipertansiyon</li>
+              <li>Koroner Arter Hastalıkları</li>
+              <li>Aritmi</li>
+              <li>Miyokard Enfarktüsü (Kalp Krizi)</li>
+              <li>Pulmoner Hipertansiyon</li>
+            </ul>
+          </div>
+
+          <!-- 5. Kart: Ödüller -->
+          <div class="info-card">
+            <h3>Ödüller</h3>
+            <ul>
+              <li>Türk Kardiyoloji Derneği tarafından 2006 yılında “En İyi Araştırma” ödülü</li>
+              <li>2-TÜBİTAK Araştırma Desteği Ödülü</li>
+              <li>Uluslararası Kongrelerde En İyi Poster Ödülü (3 kez)</li>
+            </ul>
+          </div>
+
+          <!-- 6. Kart: Yayınlar -->
+          <div class="info-card">
+            <h3>Yayınlar</h3>
+            <ul>
+              <li>Sol ön inen Artere MIDCABG Tekniği ile Bypass Uygulanan Hastalarda Uzun Dönem Takip Sonuçları</li>
+              <li>Percutaneous Mitral Balloon Valvuloplasty in Geriatric Patients</li>
+              <li>Magnetica Cardiaca: Rezonant Imaging</li>
+            </ul>
+          </div>
+        </div>
+        <!-- EK BİLGİLER BÖLÜMÜ SONU -->
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 DOCTORSearch. Tüm hakları saklıdır.</p>
+  </footer>
+  
+  <!-- Sertifika Görüntüleme Modal'ı -->
+  <div id="certificateModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="certificateImg">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Modal için JS kodu: Sertifika resmine tıklandığında modal açılıyor.
+    var modal = document.getElementById("certificateModal");
+    var img = document.getElementById("certificateImage");
+    var modalImg = document.getElementById("certificateImg");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>

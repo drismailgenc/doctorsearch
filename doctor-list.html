@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOCTORSearch - Doktor Listesi</title>
+
+  <!-- Mevcut stil dosyalarınız -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- Doktor listesi için ekstra stil -->
+  <link rel="stylesheet" href="styles/doctor-list.css" />
+
+  <!-- Font Awesome (örnek ikonlar için) -->
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        DOCTORSearch
+      </div>
+      <nav>
+        <a href="#" class="nav-link">Acentanızı bize taşıyın!</a>
+
+        <!-- Kaydol Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn">Kaydol</button>
+          <div class="dropdown-content">
+            <a href="bireysel-kayit.html">Bireysel Kayıt</a>
+            <a href="saglik-mensubu-kayit.html">Sağlık Mensubu Kayıt</a>
+          </div>
+        </div>
+
+        <!-- Giriş Yap Dropdown -->
+        <div class="dropdown">
+          <button class="dropbtn">Giriş Yap</button>
+          <div class="dropdown-content">
+            <a href="bireysel-giris.html">Bireysel Girişi</a>
+            <a href="saglik-mensubu-giris.html">Sağlık Mensubu Girişi</a>
+            <a href="acenta-giris.html">Acenta Girişi</a>
+          </div>
+        </div>
+
+        <select>
+          <option>TRY</option>
+          <option>USD</option>
+          <option>EUR</option>
+        </select>
+        <select>
+          <option>TR</option>
+          <option>EN</option>
+          <option>AR</option>
+        </select>
+      </nav>
+    </div>
+
+    <div class="hero-section">
+      <h1 class="hero-title">
+        dijital sağlık ekosisteminin geleceğini inşa ediyor ve milyonlarca
+        insanın hayatına değer katıyoruz.
+      </h1>
+
+      <div class="search-bar-container">
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab active" data-type="video">
+            <i class="fas fa-video"></i> Video
+          </button>
+          <button class="tab" data-type="appointment">
+            <i class="fas fa-calendar-check"></i> Randevu
+          </button>
+          <button class="tab" data-type="tourism">
+            <i class="fas fa-plane"></i> Sağlık Turizmi
+          </button>
+        </div>
+
+        <!-- Search Area -->
+        <div class="search-area">
+          <div id="search-fields" class="fields-container">
+            <!-- Dinamik olarak dolduruluyor (script.js) -->
+            <input type="text" placeholder="Arama yapın..." />
+          </div>
+          <button class="search-btn">Ara</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="chat-btn">Hey Doc</button>
+  </header>
+
+  <main>
+    <!-- Doktor listeleme alanı demo -->
+    <section class="doctor-list-section">
+      <h2>Doktorlar</h2>
+
+      <div class="doctor-card">
+        <img src="assets/doc1.jpeg" alt="Dr. Ahmet" class="doctor-image" />
+        <div class="doctor-info">
+          <h3 class="doctor-name">Dr. Ahmet Yılmaz</h3>
+          <p class="doctor-specialty">Genel Cerrahi</p>
+          <p class="doctor-phone"><i class="fas fa-phone"></i> +90 555 123 45 67</p>
+          <p class="doctor-map"><i class="fas fa-map"></i>Aktepe Yolu, 04500 Aktepe/Patnos/Ağrı</p>
+        </div>
+        <div class="doctor-actions">
+          <button class="btn-video">Görüntülü Ön Görüşme</button>
+          <button class="btn-question">Soru Sor</button>
+          <button class="btn-offer">Fiyat Teklifi Al</button>
+          <button class="btn-info" onclick="window.location.href='doctor-detail.html'">
+            Doktoru İncele
+          </button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="assets/doc2.jpeg" alt="Dr. Zeynep" class="doctor-image" />
+        <div class="doctor-info">
+          <h3 class="doctor-name">Dr. Zeynep Karaca</h3>
+          <p class="doctor-specialty">Estetik Cerrahi</p>
+          <p class="doctor-phone"><i class="fas fa-phone"></i> +90 532 987 65 43</p>
+          <p class="doctor-map"><i class="fas fa-map"></i>Aktepe Yolu, 04500 Aktepe/Patnos/Ağrı</p>
+        </div>
+        <div class="doctor-actions">
+          <button class="btn-video">Görüntülü Ön Görüşme</button>
+          <button class="btn-question">Soru Sor</button>
+          <button class="btn-offer">Fiyat Teklifi Al</button>
+          <button class="btn-info" onclick="window.location.href='doctor-detail.html'">
+            Doktoru İncele
+          </button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="assets/doc3.jpeg" alt="Dr. Mehmet" class="doctor-image" />
+        <div class="doctor-info">
+          <h3 class="doctor-name">Dr. Mehmet Erdem</h3>
+          <p class="doctor-specialty">Diş Hekimliği</p>
+          <p class="doctor-phone"><i class="fas fa-phone"></i> +90 536 111 22 33</p>
+          <p class="doctor-map"><i class="fas fa-map"></i>Aktepe Yolu, 04500 Aktepe/Patnos/Ağrı</p>
+        </div>
+        <div class="doctor-actions">
+          <button class="btn-video">Görüntülü Ön Görüşme</button>
+          <button class="btn-question">Soru Sor</button>
+          <button class="btn-offer">Fiyat Teklifi Al</button>
+          <button class="btn-info" onclick="window.location.href='doctor-detail.html'">
+            Doktoru İncele
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DOCTORSearch. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Script Dosyalarınız -->
+  <script src="script.js"></script>
+</body>
+
+</html>

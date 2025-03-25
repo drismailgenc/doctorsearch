@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bireysel Kayıt - DOCTORSearch</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /* Form Sayfası Stilleri */
+    .form-container {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group button {
+      width: 100%;
+      padding: 0.7rem;
+      border: none;
+      background-color: var(--dark);
+      color: var(--white);
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #555;
+    }
+    .form-footer {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .form-footer a {
+      text-decoration: none;
+      color: var(--turquoise);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        DOCTORSearch
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="form-container">
+      <h2>Bireysel Kayıt</h2>
+      <form action="submit-bireysel-kayit.php" method="post">
+        <div class="form-group">
+          <label for="fullname">Ad Soyad</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Posta</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Şifre Tekrar</label>
+          <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Kayıt Ol</button>
+        </div>
+      </form>
+      <div class="form-footer">
+        <p>Zaten hesabınız var mı? <a href="bireysel-giris.html">Giriş Yap</a></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 DOCTORSearch. Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
